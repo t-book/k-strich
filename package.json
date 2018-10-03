@@ -1,8 +1,8 @@
 {
-  "name": "k-strich template",
+  "name": "kstrich_template",
   "version": "0.0.1",
   "description": "k-strich template with Babel, SASS and lodash",
-  "author": "Toni Schönbuchner",
+  "author": "Toni Schoenbuchner",
   "license": "MIT",
   "homepage": "https://github.com/t-book/k-strich",
   "scripts": {
@@ -14,7 +14,8 @@
     "url": "https://github.com/t-book/k-strich"
   },
   "dependencies": {
-    "lodash": "4.17.11"
+    "lodash": "4.17.11",
+    "smoothscroll-polyfill": "^0.4.3"
   },
   "devDependencies": {
     "@babel/core": "7.1.0",
