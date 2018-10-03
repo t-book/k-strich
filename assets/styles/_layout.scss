@@ -1,0 +1,72 @@
+$break-small: 900px;
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  &:before, &:after {
+    box-sizing: inherit;
+  }
+}
+
+html, body, .site {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.article {
+  padding: 25px 30px 40px 10px;
+  margin-left: 20%;
+  @media only screen and (max-width: $break-small) { 
+      margin-left: 0;
+      padding: 35px 20px;
+  }
+}
+
+.sidebar {
+  height: 100%;
+  padding: 30px 20px 0px 30px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: $break-small) { 
+      display: none; 
+  }
+  
+  &--navlist{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8rem;
+  }
+}
+
+.nav {
+  &--bottom {
+    position: absolute;
+    bottom: 10px;
+  }   
+}
+
+.nav--mobile {
+  display: none;
+  @media only screen and (max-width: $break-small) { 
+      display: block;
+      padding: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+

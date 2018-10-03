@@ -1,0 +1,27 @@
+.section {
+    width: 100%;
+    padding-top: .25rem;
+    
+    &__eventinfo, &__eventdate {
+    	font-weight: normal;
+    	letter-spacing: -0.3px;
+    	line-height: 2.1rem;
+        font-size: 2rem;
+    }
+
+    &--line {
+        border-top: 5px solid black;
+        margin-bottom: 1rem;
+    }
+    
+    &__table {}
+        
+    &__img {
+        display: inline-block;
+        margin-top: 1rem;
+    }
+    
+    &__img--fullwidth {
+        width: 100%;
+    }
+}
