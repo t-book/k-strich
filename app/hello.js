@@ -1,3 +1,5 @@
+
+
 const people = [
   {
     manager: "Jen",
@@ -13,4 +15,8 @@ const people = [
   }
 ]
 
-export default people
+export function hello(){
+  alert("hello");
+}
+
+export  {people}

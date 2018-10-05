@@ -1,8 +1,15 @@
+@import '_variables.scss';
 @import '_normalize.scss';
-@import '_layout.scss';
-@import '_grid.scss';
+@import '_base.scss';
+@import '_l-grid.scss';
 @import '_type.scss';
-@import '_section.scss';
-@import '_sidebarlinks.scss';
+@import '_sidebar.scss';
 
+
+@import '_c-news.scss';
+@import '_c-edition.scss';
+@import '_slider.scss';
+@import '_newsletter.scss';
+@import '_address.scss';
+@import '_imprint.scss';
 

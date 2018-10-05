@@ -9,7 +9,7 @@ const dirNode = 'node_modules';
 const dirApp = path.join(__dirname, 'app');
 const dirAssets = path.join(__dirname, 'assets');
 
-const appHtmlTitle = 'Webpack Boilerplate';
+const appHtmlTitle = 'k-strich';
 
 /**
  * Webpack Configuration
@@ -36,7 +36,13 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.join(__dirname, 'index.ejs'),
             title: appHtmlTitle
-        })
+        }),
+
+        new webpack.ProvidePlugin({
+           $: "jquery",
+           jQuery: "jquery"
+       })
+        
     ],
     module: {
         rules: [

@@ -1,0 +1,44 @@
+.c-edition {
+    width: 100%;
+    padding-top: $c-list-padding-top;
+    
+    &__artist {
+        font-weight: normal;
+        letter-spacing: $big-type-spacing;
+        line-height: $big-type-line;
+        font-size: $big-type-size;
+        margin: 0;
+        font-weight: $bold-type;
+    }
+
+    &--line {
+        border-top: $border-top;
+        margin-bottom: $border-bottom-margin;
+    }
+
+    &__headline {
+        border-bottom: $border-bottom;
+        font-size: $big-type-size;
+        margin-bottom: $border-bottom-margin;
+        padding-bottom: $c-list-padding-bottom;
+    }
+
+    &__text--col1 {
+        column-count: 1;
+        line-height: 1.2rem;
+        font-weight: $bold-type;
+        max-width: 800px;
+        
+    }
+
+    &__text--col2 {
+        column-count: 2;
+        line-height: 1.2rem;
+        font-weight: $bold-type;
+
+        @media only screen and (max-width: $break-small) { 
+            column-count: 1;
+        }
+    }
+           
+}

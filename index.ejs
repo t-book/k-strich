@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 </head>
 <body>
 <main class="site">
 
 <nav class="nav--mobile">
-        <ul class="sidebar--navlist">
+        <ul class="sidebar__navlist">
           <li><a href="#" class="sidebar__a">Achim Bertenburg</a></li>
           <li><a href="#" class="sidebar__a">Arne Schmitt</a></li>
         </ul>
@@ -17,9 +18,16 @@
 
   <aside class="sidebar">
     <div class="nav">
-      <ul class="sidebar--navlist">
-        <li><a href="#" class="sidebar__a">Achim Bertenburg</a></li>
-        <li><a href="#" class="sidebar__a">Arne Schmitt</a></li>
+      <ul class="sidebar__navlist">
+        <li><a href="#target" class="sidebar__a">Achim Bertenburg</a></li>
+        <li><a href="#" class="sidebar__a">Arne Schmitt</a>
+          <ul class="sidebar__navlist sidebar__navlist--sub">
+            <li><a href="#" class="sidebar__a is_active">Arbeiten</a></li>
+            <li><a href="#" class="sidebar__a">Text</a></li>
+            <li><a href="#" class="sidebar__a">Freier Punkt</a></li>
+            <li><a href="#" class="sidebar__a">CV</a></li>
+          </ul>
+        </li>
         <li><a href="#" class="sidebar__a">Christian Haake</a></li>
         <li><a href="#" class="sidebar__a">Die tödliche Doris</a></li>
         <li><a href="#" class="sidebar__a">Eiko Grimberg</a></li>
@@ -32,77 +40,258 @@
     </ul>
     </div>
     <div class="nav nav--bottom">
-      <ul class="sidebar--navlist">
+      <ul class="sidebar__navlist">
         <li><a href="#" class="sidebar__a">Ausstellungen</a></li>
         <li><a href="#" class="sidebar__a">Editionen</a></li>
         <li><a href="#" class="sidebar__a">Kontakt</a></li>
-        <li></li>
-        <li><a href="#" class="sidebar__a"><u>de</u> / eng</a></li>
+        <li></li> 
+        <li><a href="#" class="sidebar__a"><u>de</u></a> / <a href="#" class="sidebar__a">eng</a></li>
         <h1 class="nav__logo">K–Strich</h1>
     </ul>
     </div>
   </aside>
 
   <article class="article">
-      <section class="section section--line">
-        <a href="http://example.com" class="section__eventlink">
-            <div class="section__table pure-g">
-              <div class="section__eventinfo pure-u-1 pure-u-sm-3-5 pure-u-md-4-5"><b>Arne Reimann</b><br>The Score</div>
-              <div class="section__eventdate pure-u-1 pure-u-sm-2-5 pure-u-md-1-5">21/09/2018<br>20 h</div>
+
+      <section class="c-news c-news--line">
+        <a href="http://example.com" class="c-news__eventlink">
+            <div class="l-grid-g">
+              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+                <p class="c-news__artist">Hannah Regenberg</p>
+                <p class="c-news__title">Kommunikation</p>
+              </div>
+              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">06.05.2018 bis<br>24.06.2018</div>
             </div>
         </a>
-            <img src="https://placeimg.com/840/600/any" class="section__img section__img--fullwidth" />
+            <img src="./assets/images/regenberg.jpg" class="c-news__img c-news__img--fullwidth" />
         
       </section>
 
-    <section class="section section--line">
-      <a href="http://example.com" class="section__eventlink">
-        <div class="section__table pure-g">
-          <div class="section__eventinfo pure-u-1 pure-u-sm-3-5 pure-u-md-4-5"><b>Arne Reimann</b><br>The Score</div>
-          <div class="section__eventdate pure-u-1 pure-u-sm-2-5 pure-u-md-1-5">21/09/2018<br>20 h</div>
+    <section class="c-news c-news--line">
+      <a href="http://example.com" class="c-news__eventlink">
+        <div class="l-grid-g">
+          <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+            <p class="c-news__artist">Susanne Fischer</p>
+            <p class="c-news__title">Hauch (Lesung)</p>
+          </div>
+          <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">28.07.2018<br>20 h</div>
         </div>
     </a>
     </section>
 
-    <section class="section section--line">
-      <a href="http://example.com" class="section__eventlink">
-        <div class="section__table pure-g">
-          <div class="section__eventinfo pure-u-1 pure-u-sm-3-5 pure-u-md-4-5"><b>Arne Reimann</b><br>The Score</div>
-          <div class="section__eventdate pure-u-1 pure-u-sm-2-5 pure-u-md-1-5">21/09/2018<br>20 h</div>
+    <section class="c-news c-news--line">
+      <a href="http://example.com" class="c-news__eventlink">
+        <div class="l-grid-g">
+          <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+            <p class="c-news__artist">Eiko Grimberg</p>
+            <p class="c-news__title">bis 1945 Reichskanzlei,<br>seit 1999 Peking Ente</p>
+          </div>
+          <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">06.05.2018<br>20 h</div>
         </div>
     </a>
     </section>
 
+    <div class="template-divider">
+      Edition list 
+    </div>
 
-    <section class="section section--line">
-      <a href="http://example.com" class="section__eventlink">
-        <div class="section__table pure-g">
-          <div class="section__eventinfo pure-u-1 pure-u-sm-3-5 pure-u-md-4-5"><b>Arne Reimann</b><br>The Score</div>
-          <div class="section__eventdate pure-u-1 pure-u-sm-2-5 pure-u-md-1-5">21/09/2018<br>20 h</div>
-        </div>
-    </a>
+    <!-- component edition list -->
+    <a name="target"></a>
+    <section class="c-edition c-edition--line">
+      <a href="http://example.com" class="c-news__eventlink">
+          <p class="c-edition__artist">Achim Bertenburg</p>
+      </a>
+    </section>
+
+    <section class="c-edition c-edition--line">
+      <a href="http://example.com" class="c-news__eventlink">
+          <p class="c-edition__artist">Achim Bertenburg<br>Christian Haake<br>Hannah Regenberg</p>
+      </a>
+    </section>
+
+    <section class="c-edition c-edition--line">
+      <a href="http://example.com" class="c-news__eventlink">
+          <p class="c-edition__artist">Alison Knowless</p>
+      </a>
     </section>
 
 
-    <section class="section section--line">
-      <a href="http://example.com" class="section__eventlink">
-        <div class="section__table pure-g">
-          <div class="section__eventinfo pure-u-1 pure-u-sm-3-5 pure-u-md-4-5"><b>Arne Reimann</b><br>The Score</div>
-          <div class="section__eventdate pure-u-1 pure-u-sm-2-5 pure-u-md-1-5">21/09/2018<br>20 h</div>
+    <div class="template-divider">
+      Edition Detail 
+    </div>
+
+    <!-- component edition list -->
+
+    <section class="c-edition">
+      <h5 class="c-edition__headline">Arne Schmitt</h5>
+      <p class="c-edition__text--col2">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+      </p>
+      <h5 class="c-edition__headline">Wenn Gesinnung Form wird</h5>
+      <p class="c-edition__text--col1">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+      </p>
+    </section>
+
+    <div class="template-divider">
+      Slider
+    </div>
+
+    <!-- component slider -->
+
+    <section class="c-edition">
+
+    <!--   <div class="glide" style="width:600px; height:400px">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="./assets/images/regenberg.jpg" /></li>
+            <li class="glide__slide"><img src="./assets/images/schmitt.jpg" /></li>
+            <li class="glide__slide"><img src="./assets/images/grimberg.jpg" /></li>
+            <li class="glide__slide"><img src="./assets/images/grahnert.jpg" /></li>
+            <li class="glide__slide"><img src="./assets/images/grahnert2.jpg" /></li>
+
+          </ul>
         </div>
-    </a>
+    
+
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+        </div>
+      </div> -->
+
+      <div class="customer-logos">
+        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image1.png"></div>
+        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image2.png"></div>
+        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image3.png"></div>
+        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image4.png"></div>
+        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image5.png"></div>
+        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image6.png"></div>
+        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image7.png"></div>
+        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image8.png"></div>
+      </div>
+    </section>
+
+    <div class="template-divider">
+      Contact
+    </div>
+
+    <!-- component Contact -->
+
+
+    <section class="c-newsletter c-newsletter--line">
+      <h5 class="c-newsletter__headline--sin">Anmeldung für den Newsletter</h5>
+      <div class="l-grid-g">
+        <div class="l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-14-24">
+          <input type="email" pattern=".+@globex.com"  class="c-newsletter__emailinput" placeholder="you@me.com" />
+        </div>
+        <div class="l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-10-24"><input class="c-newsletter__emailsubmit" type="submit" value="absenden"></div>
+        <div class="l-grid-u-1 l-grid-u-sm-5-5 l-grid-u-md-24-24">
+
+          <label class="c-newsletter__emailcheckbox">Ich akzeptiere die <a href=""><u>Datenschutzgrundverordnung</u></a> von K'
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+
+        </div>
+      </div>
     </section>
 
 
-    <section class="section section--line">
-      <a href="http://example.com" class="section__eventlink">
-        <div class="section__table pure-g">
-          <div class="section__eventinfo pure-u-1 pure-u-sm-3-5 pure-u-md-4-5"><b>Arne Reimann</b><br>The Score</div>
-          <div class="section__eventdate pure-u-1 pure-u-sm-2-5 pure-u-md-1-5">21/09/2018<br>20 h</div>
+    <section class="c-adress c-address--line">
+      <div class="l-grid-g">
+        <div class="l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-14-24">
+          <img src="./assets/images/logo.png" class="c-address__logo">
         </div>
-    </a>
+        <div class="l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-10-24">
+          <p> Galerie K'<br>
+              Alexanderstraße 9b<br>
+              28203 Bremen<br><br>
+
+              Telefon<br>
+              0421 - 161 426 92<br><br>
+
+              E-Mail<br>
+              info [at] k-strich.de<br><br>
+
+              Öffnungszeiten<br>
+              Mittwoch - Freitag, 14 - 18 Uhr<br>
+              Samstag, 12 - 16 Uhr<br>
+              Weitere Termine nach Vereinbarung<br><br>
+
+              Soziale Netzwerke<br>
+              facebook<br>
+              YouTube<br>
+              SoundCloud<br><br>
+
+              mo' tapes<br>
+              bandcamp<br>
+              facebook<br>
+              YouTube<br>
+              SoundCloud</p>
+        </div>
+      </div>
     </section>
+
+    <section class="c-imprint c-imprint--line">
+      <h5 class="c-imprint__headline--sin">Imprint</h5>
+
+      <div class="l-grid-g">
+        <div class="l-grid-u-1 l-grid-u-sm-3-6 l-grid-u-md-8-24">
+          <p style="padding-right: .5rem">
+            Angaben gemäß § 5 TMG<br>
+            K' – Zentrum Aktuelle Kunst<br>
+            Radoslaw Krolczyk und Eric Peters GbR<br>
+            Alexanderstraße 9b<br>
+            28203 Bremen<br><br>
+
+            Ust-IdNr.: DE287155874<br>
+            Finanzamt Bremen<br><br>
+
+            Telefon<br>
+            +49 (0) 421 - 161 426 92<br>
+            …
+          </p>
+        </div>
+        <div class="l-grid-u-1 l-grid-u-sm-3-6 l-grid-u-md-8-24">
+          <p style="padding-right: .5rem">
+            E-Mail<br>
+            info [at] k-strich.de<br><br>
+
+            Vertreten durch<br>
+            Radoslaw Krolczyk<br>
+            Eric Peters<br><br>
+
+            Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV<br>
+            ...
+          </p>
+        </div>
+        <div class="l-grid-u-1 l-grid-u-sm-3-6 l-grid-u-md-8-24">
+          <p>
+            Radoslaw Krolczyk<br>
+            Weberstraße 25<br>
+            28203 Bremen<br><br>
+
+            Eric Peters<br>
+            Weberstraße 25<br>
+            28203 Bremen <br><br>
+
+            Rechtliche Beratung<br>
+            RA Susanne Oelbermann<br>
+            ...
+          </p>
+        </div>
+        <div class="l-grid-u-1 l-grid-u-sm-6-6 l-grid-u-md-24-24 "><p class="c-imprint__text--col2">
+        Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+        </div>
+
+
+      </div>
+    </section>
+
+
   </article>
+
 </main>
 </body>
 </html>

@@ -1,0 +1,33 @@
+.c-news {
+    width: 100%;
+    padding-top: $c-list-padding-top;
+    
+    &__eventinfo, &__eventdate {
+    	font-weight: normal;
+    	letter-spacing: $big-type-spacing;
+    	line-height: $big-type-line;
+        font-size: $big-type-size;
+    }
+
+    &__artist {
+        font-weight: $bold-type;
+    }
+
+    &__artist, &__title {
+        margin: 0;
+    }
+
+    &--line {
+        border-top: $border-top;
+        margin-bottom: $border-bottom-margin;
+    }
+           
+    &__img {
+        display: inline-block;
+        margin-top: 1rem;
+    }
+    
+    &__img--fullwidth {
+        width: 100%;
+    }
+}

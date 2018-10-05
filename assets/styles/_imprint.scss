@@ -1,0 +1,38 @@
+.c-imprint {
+    width: 100%;
+    padding-top: $c-list-padding-top;
+    
+
+    &--line {
+        border-top: $border-top;
+        margin-bottom: $border-bottom-margin;
+    }
+
+    &__headline {
+        border-bottom: $border-bottom;
+        font-size: $big-type-size;
+        margin-bottom: $border-bottom-margin;
+        padding-bottom: $c-list-padding-bottom;
+    }
+
+    &__headline--sin {
+        font-size: $big-type-size;
+        margin-bottom: $border-bottom-margin;
+        padding-bottom: $c-list-padding-bottom;
+        margin-top: 0px;
+    } 
+
+    &__logo{
+        margin-top: 1rem;
+    }   
+
+    &__text--col2 {
+    column-count: 2;
+    line-height: 1.2rem;
+    font-weight: $bold-type;
+
+    @media only screen and (max-width: $break-small) { 
+        column-count: 1;
+    }
+    }      
+}
