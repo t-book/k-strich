@@ -19,58 +19,6 @@ html, body, .site {
   font-size: 1.1rem;
 }
 
-.article {
-  padding: 25px 30px 40px 10px;
-  margin-left: 260px;
-  max-width: 1400px;
-  
-  @media only screen and (max-width: $break-small) { 
-      margin-left: 0;
-      padding: 35px 20px;
-  }
-
-  @media only screen and (min-width: 1400px) { 
-      border-right: 5px solid black;
-  }
-
-}
-
-.sidebar {
-  height: 100%;
-  padding: 30px 20px 0px 30px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-
-  @media only screen and (max-width: $break-small) { 
-      display: none; 
-  }
-  
-  &--navlist{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    line-height: 1.8rem;
-  }
-}
-
-.nav {
-  &--bottom {
-    position: absolute;
-    bottom: 10px;
-  }   
-}
-
-.nav--mobile {
-  display: none;
-  @media only screen and (max-width: $break-small) { 
-      display: block;
-      padding: 20px;
-  }
-}
-
 .template-divider {
   width: 100%;
   height: 200px;
@@ -81,20 +29,5 @@ html, body, .site {
 }
 
 
-
-
-/* Portfolio */
-.portfolio .sy-controls {
-  display: block;
-}
-.portfolio .sy-pager {
-  margin: 1.5em 0;
-}
-.portfolio .external-captions {
-  background-color: #fff;
-  padding: 1em;
-}
-
-@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
-@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+button:focus {outline:0;}
 

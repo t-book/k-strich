@@ -1,0 +1,11 @@
+.article {
+  padding: 25px 30px 40px 10px;
+  margin-left: 260px;
+  max-width: 1400px;
+  -webkit-transition: margin 700ms;
+  transition: margin 700ms;
+  
+  &--menuhidden{
+    margin-left: 60px;
+  }
+}

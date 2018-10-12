@@ -8,6 +8,7 @@ const IS_DEV = (process.env.NODE_ENV === 'dev');
 const dirNode = 'node_modules';
 const dirApp = path.join(__dirname, 'app');
 const dirAssets = path.join(__dirname, 'assets');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const appHtmlTitle = 'k-strich';
 
@@ -40,8 +41,13 @@ module.exports = {
 
         new webpack.ProvidePlugin({
            $: "jquery",
-           jQuery: "jquery"
-       })
+           jQuery: "jquery",
+           'window.jQuery': 'jquery'
+        }),
+
+        new CopyWebpackPlugin([
+            {from:'./assets/images/',to:'./assets/images'} 
+        ]),
         
     ],
     module: {

@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 </head>
 <body>
 <main class="site">
 
-<nav class="nav--mobile">
-        <ul class="sidebar__navlist">
-          <li><a href="#" class="sidebar__a">Achim Bertenburg</a></li>
-          <li><a href="#" class="sidebar__a">Arne Schmitt</a></li>
-        </ul>
-</nav>
+<div class="hamburger hamburger--arrow nav--mobile">
+  <div class="hamburger-box">
+    <div class="hamburger-inner"></div>
+  </div>
+</div>
 
   <aside class="sidebar">
     <div class="nav">
@@ -45,14 +43,13 @@
         <li><a href="#" class="sidebar__a">Editionen</a></li>
         <li><a href="#" class="sidebar__a">Kontakt</a></li>
         <li></li> 
-        <li><a href="#" class="sidebar__a"><u>de</u></a> / <a href="#" class="sidebar__a">eng</a></li>
+        <li><a href="#" class="sidebar__a is_active">de</a> / <a href="#" class="sidebar__a">eng</a></li>
         <h1 class="nav__logo">K–Strich</h1>
     </ul>
     </div>
   </aside>
 
   <article class="article">
-
       <section class="c-news c-news--line">
         <a href="http://example.com" class="c-news__eventlink">
             <div class="l-grid-g">
@@ -63,7 +60,7 @@
               <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">06.05.2018 bis<br>24.06.2018</div>
             </div>
         </a>
-            <img src="./assets/images/regenberg.jpg" class="c-news__img c-news__img--fullwidth" />
+            <img src="./assets/images/artist/regenberg/regenberg.jpg" class="c-news__img c-news__img--fullwidth" />
         
       </section>
 
@@ -91,10 +88,6 @@
     </a>
     </section>
 
-    <div class="template-divider">
-      Edition list 
-    </div>
-
     <!-- component edition list -->
     <a name="target"></a>
     <section class="c-edition c-edition--line">
@@ -116,10 +109,6 @@
     </section>
 
 
-    <div class="template-divider">
-      Edition Detail 
-    </div>
-
     <!-- component edition list -->
 
     <section class="c-edition">
@@ -133,51 +122,69 @@
       </p>
     </section>
 
-    <div class="template-divider">
-      Slider
-    </div>
 
     <!-- component slider -->
-
-    <section class="c-edition">
-
-    <!--   <div class="glide" style="width:600px; height:400px">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide"><img src="./assets/images/regenberg.jpg" /></li>
-            <li class="glide__slide"><img src="./assets/images/schmitt.jpg" /></li>
-            <li class="glide__slide"><img src="./assets/images/grimberg.jpg" /></li>
-            <li class="glide__slide"><img src="./assets/images/grahnert.jpg" /></li>
-            <li class="glide__slide"><img src="./assets/images/grahnert2.jpg" /></li>
-
-          </ul>
-        </div>
-    
-
-        <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-        </div>
-      </div> -->
-
-      <div class="customer-logos">
-        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image1.png"></div>
-        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image2.png"></div>
-        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image3.png"></div>
-        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image4.png"></div>
-        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image5.png"></div>
-        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image6.png"></div>
-        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image7.png"></div>
-        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image8.png"></div>
+    <a name="slider"></a>
+    <div class="c-gallery owl-theme js-autogerechte">
+      <div class="gallery__item">
+        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/die_autogerechte_stadt/DSCF4574.jpg"></div>
+        <div class="gallery__caption">Eine lange <br>Bildunterschrift mit mehr <br>Zeilen</div>
       </div>
-    </section>
-
-    <div class="template-divider">
-      Contact
+      <div class="gallery__item">
+        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/die_autogerechte_stadt/DSCF4596.jpg"></div>
+        <div class="gallery__caption">Einzeilige Bildunterschrift</div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/die_autogerechte_stadt/DSCF4612.jpg"></div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/die_autogerechte_stadt/DSCF4651.jpg"></div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/die_autogerechte_stadt/DSCF4676.jpg"></div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/die_autogerechte_stadt/DSCF4683.jpg"></div>
+      </div>
     </div>
 
-    <!-- component Contact -->
+    <div class="c-gallery owl-theme js-brandung">
 
+      <div class="gallery__item">
+        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/gerausch_einer_brandung/Geraeusch_Cover_00.jpg"></div>
+        <div class="gallery__caption">Bildunterschrift</div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/gerausch_einer_brandung/Geraeusch_Spread_01.jpg"></div>
+        <div class="gallery__caption">Bildunterschrift</div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/gerausch_einer_brandung/Geraeusch_Spread_02.jpg"></div>
+        <div class="gallery__caption">Bildunterschrift</div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/gerausch_einer_brandung/Geraeusch_Spread_03.jpg"></div>
+        <div class="gallery__caption">Bildunterschrift</div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/gerausch_einer_brandung/Geraeusch_Spread_04.jpg"></div>
+        <div class="gallery__caption">Bildunterschrift</div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/gerausch_einer_brandung/Geraeusch_Spread_05.jpg"></div>
+        <div class="gallery__caption">Bildunterschrift</div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/gerausch_einer_brandung/Geraeusch_Spread_06.jpg"></div>
+        <div class="gallery__caption">Bildunterschrift</div>
+      </div>
+    </div>
+    
+    <p><a href="#slider" class="js-switcher sidebar__a is_active" data-id="autogerechte">Die autogerechte Stadt</a><br>
+    <a href="#slider" class="js-switcher sidebar__a" data-id="brandung">Geräusch einer fernen Brandung</a></p>
+
+
+    <!-- component Contact -->
 
     <section class="c-newsletter c-newsletter--line">
       <h5 class="c-newsletter__headline--sin">Anmeldung für den Newsletter</h5>

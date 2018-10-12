@@ -7,15 +7,9 @@
   left: 0;
   overflow-x: hidden;
   width: 250px;
-
-  @media only screen and (max-width: $break-small) { 
-      display: none; 
-  }
-
-  @media only screen and (min-width: 1400px) { 
-      border-right: 5px solid black;
-  }
-  
+  -webkit-transition: margin 700ms;
+  transition: margin 700ms;
+    
   &__navlist{
     list-style-type: none;
     margin: 0;
@@ -25,6 +19,10 @@
 
   &__navlist--sub{
     margin: 0 0 20px 15px;
+  }
+
+  &--hidden{
+    display: none;
   }
 
 } 
@@ -59,17 +57,4 @@
     }
 }
 
-.nav {
-  &--bottom {
-    position: absolute;
-    bottom: 10px;
-  }   
-}
 
-.nav--mobile {
-  display: none;
-  @media only screen and (max-width: $break-small) { 
-      display: block;
-      padding: 20px;
-  }
-}
