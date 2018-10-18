@@ -4,7 +4,6 @@
 
 // Load application styles
 import 'styles/index.scss';
-import '../node_modules/hamburgers/dist/hamburgers.min.css';
 
 // ================================
 // START YOUR APP HERE

@@ -20,19 +20,7 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 
   /* Webkit: fixes text-rendering: optimizeLegibility */
 
-    /*
-    Sets the font stack to fonts known to work properly with the above letter
-    and word spacings. See: https://github.com/yahoo/pure/issues/41/
-    The following font stack makes Pure Grids work on all known environments.
-    * FreeSans: Ships with many Linux distros, including Ubuntu
-    * Arimo: Ships with Chrome OS. Arimo has to be defined before Helvetica and
-      Arial to get picked up by the browser, even though neither is available
-      in Chrome OS.
-    * Droid Sans: Ships with all versions of Android.
-    * Helvetica, Arial, sans-serif: Common font stack on OS X and Windows.
-    */
-  font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
-
+  
   /* Use flexbox when possible to avoid `letter-spacing` side-effects. */
   display: -webkit-box;
   display: -webkit-flex;
@@ -81,9 +69,6 @@ Resets the font family back to the OS/browser's default sans-serif font,
 this the same font stack that Normalize.css sets for the `body`.
 */
 
-.l-grid-g [class*="pure-u"] {
-  font-family: sans-serif;
-}
 
 .l-grid-u-1, .l-grid-u-1-1, .l-grid-u-1-2, .l-grid-u-1-3, .l-grid-u-2-3, .l-grid-u-1-4, .l-grid-u-3-4, .l-grid-u-1-5, .l-grid-u-2-5, .l-grid-u-3-5, .l-grid-u-4-5, .l-grid-u-5-5, .l-grid-u-1-6, .l-grid-u-5-6, .l-grid-u-1-8, .l-grid-u-3-8, .l-grid-u-5-8, .l-grid-u-7-8, .l-grid-u-1-12, .l-grid-u-5-12, .l-grid-u-7-12, .l-grid-u-11-12, .l-grid-u-1-24, .l-grid-u-2-24, .l-grid-u-3-24, .l-grid-u-4-24, .l-grid-u-5-24, .l-grid-u-6-24, .l-grid-u-7-24, .l-grid-u-8-24, .l-grid-u-9-24, .l-grid-u-10-24, .l-grid-u-11-24, .l-grid-u-12-24, .l-grid-u-13-24, .l-grid-u-14-24, .l-grid-u-15-24, .l-grid-u-16-24, .l-grid-u-17-24, .l-grid-u-18-24, .l-grid-u-19-24, .l-grid-u-20-24, .l-grid-u-21-24, .l-grid-u-22-24, .l-grid-u-23-24, .l-grid-u-24-24 {
   display: inline-block;

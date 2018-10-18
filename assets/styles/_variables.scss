@@ -1,11 +1,12 @@
 $break-small: 900px;
-
+$break-medium: 1038px;
 
 /* Typography */
 
 $big-type-size: 2.4rem;
 $big-type-line: 2.6rem;
 $big-type-spacing: -0.2px;
+$regular-type: 400;
 $bold-type: 600;
 
 $medium-type-size: 1.5rem;
@@ -22,3 +23,7 @@ $border-bottom-margin-large: 4rem;
 $c-list-padding-top: .25rem;
 $c-list-padding-bottom: .25rem;
 
+/* color */
+
+$higlight-color: #000;
+$text-invert-color: #fff;

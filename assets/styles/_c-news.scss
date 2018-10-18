@@ -5,8 +5,8 @@
     &__eventinfo, &__eventdate {
     	font-weight: normal;
     	letter-spacing: $big-type-spacing;
-    	line-height: $big-type-line;
         font-size: $big-type-size;
+        line-height: $big-type-line;
     }
 
     &__artist {
@@ -15,13 +15,24 @@
 
     &__artist, &__title {
         margin: 0;
+        line-height: $big-type-line;
     }
 
     &--line {
         border-top: $border-top;
         margin-bottom: $border-bottom-margin;
+        padding-bottom: 2rem;
     }
-           
+     
+    &--invert {
+        background-color: $higlight-color;
+        padding-left: .7rem;
+    }
+
+     &--invert a {
+        color: $text-invert-color;
+    }   
+
     &__img {
         display: inline-block;
         margin-top: 1rem;
