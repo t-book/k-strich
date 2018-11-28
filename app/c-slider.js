@@ -19,7 +19,7 @@ $(document).ready(function() {
 			margin: 10,
 			dots: false,
 			navText: [
-				"", 
+				"<img src='./assets/images/left-arrow.png' >", 
 				"<img src='./assets/images/right-arrow.png' >"
 				],
 			responsive: {
