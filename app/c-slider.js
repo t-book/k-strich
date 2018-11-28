@@ -2,8 +2,12 @@ import 'owl.carousel';
 
 $(document).ready(function() {
 
-	$('.c-gallery').hide();
+	$('.c-gallery:not(.c-editions)').hide();
 	$('.c-gallery:first').show();
+
+	$('.c-gallerytext').hide();
+	$('.c-gallerytext:first').show();
+
 	$('.js-switcher:first').addClass('is_active');
 
 	$(".c-gallery").each(function() {
@@ -15,7 +19,7 @@ $(document).ready(function() {
 			margin: 10,
 			dots: false,
 			navText: [
-				"<img src='./assets/images/left-arrow.png?raw=1' >", 
+				"", 
 				"<img src='./assets/images/right-arrow.png' >"
 				],
 			responsive: {
@@ -35,9 +39,10 @@ $(document).ready(function() {
 	$('.js-switcher').click(function() {
 		$('.js-switcher').removeClass('is_active');
 		$(this).addClass('is_active');
+		$('.js-work-title').text($(this).text());
 		let targetEl = $(this).data('id');
-		$('.c-gallery').fadeOut('fast');
-		$('.js-' + targetEl).fadeIn('fast');
+		$('.c-gallery, .c-gallerytext').fadeOut('fast');
+		$('.js-' + targetEl).fadeIn('slow');
 	});
 
 });

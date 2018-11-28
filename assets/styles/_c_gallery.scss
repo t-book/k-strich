@@ -27,15 +27,23 @@
 }
 
 .gallery__image {
-  max-width: 95%;
-  height: auto;
-  max-height: 95%;
+  max-height: 550px;
+  width: auto;
+  max-width: 100%;
 }
 
 .gallery__caption {
   font-size: 0.8rem;
   padding: 0 0 10px 0;
   line-height: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery__caption--normargin {
+  font-size: 0.8rem;
+  padding: 0 0 10px 0;
+  line-height: 1rem;
+  margin-top: 0rem;
 }
 
 .owl-theme .owl-nav [class*='owl-'] {
@@ -47,10 +55,12 @@
 
 .owl-prev {
   float: left;
+  cursor: pointer
 }
 
 .owl-next {
   float: right;
+  cursor: pointer
 }
 
 .owl-dots:after {

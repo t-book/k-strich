@@ -1,7 +1,9 @@
 .c-edition {
     width: 100%;
-    padding-top: $c-list-padding-top;
-    
+    margin-bottom: 1rem;
+   
+
+
     &__artist {
         font-weight: normal;
         letter-spacing: $big-type-spacing;
@@ -16,11 +18,23 @@
         margin-bottom: $border-bottom-margin;
     }
 
+    &__index {
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding: .3rem 0 1.5rem 0;
+    }
+
     &__headline {
+        margin-top: 1rem;
         border-bottom: $border-bottom;
         font-size: $big-type-size;
         margin-bottom: $border-bottom-margin;
         padding-bottom: $c-list-padding-bottom;
+        margin-top: 2rem;
+    }
+
+    &__headline:first-child{
+        margin-top: 0px;
     }
 
     &__text--col1 {
@@ -28,7 +42,10 @@
         line-height: 1.2rem;
         font-weight: $regular-type;
         max-width: 800px;
-        
+    }
+
+    &__text--col1 p {
+        margin-top: .2rem;
     }
 
     &__text--col2 {
@@ -39,6 +56,10 @@
         @media only screen and (max-width: $break-small) { 
             column-count: 1;
         }
+    }
+
+    &__text--col2 p {
+        margin-top: .2rem;
     }
            
 }

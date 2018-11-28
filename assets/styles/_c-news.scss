@@ -11,6 +11,7 @@
 
     &__artist {
         font-weight: $bold-type;
+        font-size: $big-type-size;
     }
 
     &__artist, &__title {
@@ -21,12 +22,22 @@
     &--line {
         border-top: $border-top;
         margin-bottom: $border-bottom-margin;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    &--index {
+        border-top: $border-top;
+        margin-bottom: 0px;
+        padding-bottom: 1.5rem;
     }
      
     &--invert {
         background-color: $higlight-color;
         padding-left: .7rem;
+    }
+
+    &--invert p {
+        color: $text-invert-color;
     }
 
      &--invert a {
@@ -41,4 +52,9 @@
     &__img--fullwidth {
         width: 100%;
     }
+}
+
+img.portrait {
+    width: auto;
+    max-height: 650px;
 }

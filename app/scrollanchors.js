@@ -7,8 +7,8 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function() {
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
            if (target.length) {
              $('html,body').animate({
-                 scrollTop: target.offset().top
-            }, 500);
+                 scrollTop: target.offset().top-30
+            }, 300);
             return false;
         }
     }
