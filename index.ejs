@@ -5,301 +5,1071 @@
     <meta name="viewport" content="width=device-width">
     <title><%= htmlWebpackPlugin.options.title %></title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="./p-styles/styles.css">
 </head>
 <body>
-<main class="site">
-
-<div class="hamburger hamburger--arrow nav--mobile" style="display: none">
-  <div class="hamburger-box">
-    <div class="hamburger-inner"></div>
+  <body>
+  <div class="hamburger hamburger--arrow nav--mobile" style="display: none">
+    <div class="hamburger-box">
+      <div class="hamburger-inner"></div>
+    </div>
   </div>
-</div>
-
   <aside class="sidebar">
-    <div class="nav">
-      <ul class="sidebar__navlist">
-        <li><a href="#target" class="sidebar__a">Achim Bertenburg</a></li>
-        <li><a href="#" class="sidebar__a">Arne Schmitt</a>
-          <ul class="sidebar__navlist sidebar__navlist--sub">
-            <li><a href="#" class="sidebar__a is_active">Arbeiten</a></li>
-            <li><a href="#" class="sidebar__a">Text</a></li>
-            <li><a href="#" class="sidebar__a">Freier Punkt</a></li>
-            <li><a href="#" class="sidebar__a">CV</a></li>
-          </ul>
-        </li>
-        <li><a href="#" class="sidebar__a">Christian Haake</a></li>
-        <li><a href="#" class="sidebar__a">Die tödliche Doris</a></li>
-        <li><a href="#" class="sidebar__a">Eiko Grimberg</a></li>
-        <li><a href="#" class="sidebar__a">Hannah Regenberg</a></li>
-        <li><a href="#" class="sidebar__a">Ingo Vetter</a></li>
-        <li><a href="#" class="sidebar__a">Miron Zownir</a></li>
-        <li><a href="#" class="sidebar__a">Sibylle Springer</a></li>
-        <li><a href="#" class="sidebar__a">Thomas Hartmann</a></li>
-        <li><a href="#" class="sidebar__a">Wolfgang Müller</a></li>
-    </ul>
-    </div>
-    <div class="nav nav--bottom">
-      <ul class="sidebar__navlist">
-        <li><a href="#" class="sidebar__a">Ausstellungen</a></li>
-        <li><a href="#" class="sidebar__a">Editionen</a></li>
-        <li><a href="#" class="sidebar__a">Kontakt</a></li>
-        <li></li> 
-        <li><a href="#" class="sidebar__a is_active">de</a> / <a href="#" class="sidebar__a">eng</a></li>
-        <h1 class="nav__logo">K–Strich</h1>
-    </ul>
-    </div>
-  </aside>
-
-  <article class="article">
-      <section class="c-news c-news--line">
-        <a href="http://example.com" class="c-news__eventlink">
-            <div class="l-grid-g">
-              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
-                <p class="c-news__artist">Hannah Regenberg</p>
-                <p class="c-news__title">Kommunikation</p>
-              </div>
-              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">06.05.2018 bis<br>24.06.2018</div>
-            </div>
-        </a>
-            <img src="./assets/images/artist/regenberg/regenberg.jpg" class="c-news__img c-news__img--fullwidth" />
-        
-      </section>
-
-    <section class="c-news c-news--line c-news--invert">
-      <a href="http://example.com" class="c-news__eventlink">
-        <div class="l-grid-g">
-          <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
-            <p class="c-news__artist">Susanne Fischer</p>
-            <p class="c-news__title">Hauch (Lesung)</p>
-          </div>
-          <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">28.07.2018<br>20 h</div>
-        </div>
-    </a>
-    </section>
-
-    <section class="c-news c-news--line">
-      <a href="http://example.com" class="c-news__eventlink">
-        <div class="l-grid-g">
-          <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
-            <p class="c-news__artist">Eiko Grimberg</p>
-            <p class="c-news__title">bis 1945 Reichskanzlei,<br>seit 1999 Peking Ente</p>
-          </div>
-          <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">06.05.2018<br>20 h</div>
-        </div>
-    </a>
-    </section>
-
-    <!-- component edition list -->
-    <a name="target"></a>
-    <section class="c-edition c-edition--line">
-      <a href="http://example.com" class="c-news__eventlink">
-          <p class="c-edition__artist">Achim Bertenburg</p>
-      </a>
-    </section>
-
-    <section class="c-edition c-edition--line">
-      <a href="http://example.com" class="c-news__eventlink">
-          <p class="c-edition__artist">Achim Bertenburg<br>Christian Haake<br>Hannah Regenberg</p>
-      </a>
-    </section>
-
-    <section class="c-edition c-edition--line">
-      <a href="http://example.com" class="c-news__eventlink">
-          <p class="c-edition__artist">Alison Knowless</p>
-      </a>
-    </section>
-
-
-    <!-- component edition list -->
-
-    <section class="c-edition">
-      <h5 class="c-edition__headline">Arne Schmitt</h5>
-      <p class="c-edition__text--col2">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
-      </p>
-      <h5 class="c-edition__headline">Wenn Gesinnung Form wird</h5>
-      <p class="c-edition__text--col1">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
-      </p>
-    </section>
-
-
-    <!-- component slider -->
-    <a name="slider"></a>
-    <div class="c-gallery owl-theme js-autogerechte">
-      <div class="gallery__item">
-        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/die_autogerechte_stadt/DSCF4574.jpg"></div>
-        <div class="gallery__caption">Eine lange <br>Bildunterschrift mit mehr <br>Zeilen</div>
+      <div class="sidebar__wrapper">
+      <div class="nav sidebar__top">
+        <ul class="sidebar__navlist">
+         <li><a href='/de/kunstler/achim-bertenburg/' class='sidebar__a '>Achim Bertenburg</a></li><li><a href='/de/kunstler/arne-schmitt/' class='sidebar__a '>Arne Schmitt</a></li><li><a href='/de/kunstler/christian-haake/' class='sidebar__a '>Christian Haake</a></li><li><a href='/de/kunstler/die-todliche-doris/' class='sidebar__a '>Die Tödliche Doris</a></li><li><a href='/de/kunstler/eiko-grimberg/' class='sidebar__a '>Eiko Grimberg</a></li><li><a href='/de/kunstler/hannah-regenberg/' class='sidebar__a '>Hannah Regenberg</a></li><li><a href='/de/kunstler/ingo-vetter/' class='sidebar__a '>Ingo Vetter</a></li><li><a href='/de/kunstler/michael-schmid/' class='sidebar__a '>Michael Schmid</a></li><li><a href='/de/kunstler/miron-zownir/' class='sidebar__a '>Miron Zownir</a></li><li><a href='/de/kunstler/sibylle-springer/' class='sidebar__a '>Sibylle Springer</a></li><li><a href='/de/kunstler/thomas-hartmann/' class='sidebar__a '>Thomas Hartmann</a></li><li><a href='/de/kunstler/verena-issel/' class='sidebar__a '>Verena Issel</a></li><li><a href='/de/kunstler/wolfgang-muller/' class='sidebar__a '>Wolfgang Müller</a></li>    </ul>
       </div>
-      <div class="gallery__item">
-        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/die_autogerechte_stadt/DSCF4596.jpg"></div>
-        <div class="gallery__caption">Einzeilige Bildunterschrift</div>
+      <div class="nav nav--bottom sidebar__bottom">
+        <ul class="sidebar__navlist">
+
+          <li><a href="/de/ausstellungen/" class="sidebar__a ">Ausstellungen</a></li>
+          <li><a href="/de/editionen/"" class="sidebar__a ">Editionen</a></li>
+          <li><a href="/de/kontakt/"" class="sidebar__a ">Kontakt</a></li>
+          <li></li>
+          <!-- <li><a href="#" class="sidebar__a is_active">de</a> / <a href="#" class="sidebar__a">eng</a></li> -->
+          <li>
+              <a href='/' class='sidebar__a is_active'>De</a> / <a href='/en/' class='sidebar__a '>En</a>
+          </li>
+          <h1 class="nav__logo"><a href="/">K–Strich</a></h1>
+      </ul>
       </div>
-      <div class="gallery__item">
-        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/die_autogerechte_stadt/DSCF4612.jpg"></div>
-      </div>
-      <div class="gallery__item">
-        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/die_autogerechte_stadt/DSCF4651.jpg"></div>
-      </div>
-      <div class="gallery__item">
-        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/die_autogerechte_stadt/DSCF4676.jpg"></div>
-      </div>
-      <div class="gallery__item">
-        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/die_autogerechte_stadt/DSCF4683.jpg"></div>
-      </div>
-    </div>
-
-    <div class="c-gallery owl-theme js-brandung">
-
-      <div class="gallery__item">
-        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/gerausch_einer_brandung/Geraeusch_Cover_00.jpg"></div>
-        <div class="gallery__caption">Bildunterschrift</div>
-      </div>
-      <div class="gallery__item">
-        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/gerausch_einer_brandung/Geraeusch_Spread_01.jpg"></div>
-        <div class="gallery__caption">Bildunterschrift</div>
-      </div>
-      <div class="gallery__item">
-        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/gerausch_einer_brandung/Geraeusch_Spread_02.jpg"></div>
-        <div class="gallery__caption">Bildunterschrift</div>
-      </div>
-      <div class="gallery__item">
-        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/gerausch_einer_brandung/Geraeusch_Spread_03.jpg"></div>
-        <div class="gallery__caption">Bildunterschrift</div>
-      </div>
-      <div class="gallery__item">
-        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/gerausch_einer_brandung/Geraeusch_Spread_04.jpg"></div>
-        <div class="gallery__caption">Bildunterschrift</div>
-      </div>
-      <div class="gallery__item">
-        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/gerausch_einer_brandung/Geraeusch_Spread_05.jpg"></div>
-        <div class="gallery__caption">Bildunterschrift</div>
-      </div>
-      <div class="gallery__item">
-        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="./assets/images/artist/arne_schmitt/gerausch_einer_brandung/Geraeusch_Spread_06.jpg"></div>
-        <div class="gallery__caption">Bildunterschrift</div>
-      </div>
-    </div>
-    
-    <p><a href="#slider" class="js-switcher sidebar__a is_active" data-id="autogerechte">Die autogerechte Stadt</a><br>
-    <a href="#slider" class="js-switcher sidebar__a" data-id="brandung">Geräusch einer fernen Brandung</a></p>
+  </div>
+    </aside>
 
 
-    <!-- component Contact -->
+    <article class="article">
+    	<section class="c-edition"><h5 class="c-edition__headline" name="top">Arne Schmitt</h5>
+        </section><img src="https://k-strich.de/site/assets/files/1093/arne-schmitt_kunst-nach-45_k-strich_1_web.jpg" class="c-news__img c-news__img--fullwidth landscape"><p class="gallery__caption--normargin">Kunst nach 45 | 2012</p><div class="c-edition__text--col1"><p>Arne Schmitt (geb. 1984, Mayen, BRD) beschäftigt sich in seinen fotografischen Arbeiten mit Architektur und Städtebau. Im Zentrum seiner Betrachtung stehen ihre geschichtlichen und gesellschaftlichen Verwicklungen. Schmitt seziert zufällig oder gezielt aufgesuchte urbane Räume genauso wie historisches Material. Dabei arbeitet er meist ortsspezifisch, so etwa in Winterthur, wo er die symbolische Ökonomie des ehemals industriellen, jetzt kreativ-durchmischten Sulzer Areals behandelt. In seinem 2015 erschienen Buch "Die neue Ungleichheit" durchsucht er bei einem Spaziergang das heutige Köln nach Momenten eines neoliberalen Umbaus. In Schmitts höchst präziser Fotografie kristallisiert sich das Politische in den Bauten und ihren Zwischenräumen.</p>
 
-    <section class="c-newsletter c-newsletter--line">
-      <h5 class="c-newsletter__headline--sin">Anmeldung für den Newsletter</h5>
-      <div class="l-grid-g">
-        <div class="l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-14-24">
-          <input type="email" pattern=".+@globex.com"  class="c-newsletter__emailinput" placeholder="you@me.com" />
-        </div>
-        <div class="l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-10-24"><input class="c-newsletter__emailsubmit" type="submit" value="absenden"></div>
-        <div class="l-grid-u-1 l-grid-u-sm-5-5 l-grid-u-md-24-24">
+    <p>Zu Schmitts wichtigsten Veröffentlichungen gehört das vieldiskutierte Buch "Wenn Gesinnung Form wird" (2012), eine fotografische Essaysammlung zur bundesdeutschen Nachkriegsarchitektur. Das Sprengel Museum Hannover widmete ihm hierzu im selben Jahr eine Ausstellung.&nbsp;Seine Arbeiten wurden 2013 mit dem Wüstenrot-Preis ausgezeichnet, einem der wichtigsten Preise für Dokumentarfotografie. 2016 war er Karl Schmidt-Rottluff-Stipendiat,&nbsp;2018 gewann er den&nbsp;Kunstpreis der Böttcherstraße in Bremen 2018. Arne Schmitt lebt und arbeitet in Köln.</p></div>
+        <h5 name="work" class="c-edition__headline js-work-title">Arbeiten</h5>
+        <div class="c-gallery owl-theme js-zeichen-der-zeit owl-loaded owl-drag" style="">
+          <div class="owl-stage-outer">
+            <div class="owl-stage" style="transform: translate3d(-3210px, 0px, 0px); transition: all 0s ease 0s; width: 11770px;">
+              <div class="owl-item cloned" style="width: 1060px; margin-right: 10px;"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1523/arneschmitt_zeichenderzeit_15_1090657.jpg"></div>
+    			        <div class="gallery__caption">Aus der Serie: Zeichen der Zeit | 2019 | 13,2 x 19,8 cm</div>
+    			      </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><img src="/site/templates/static/assets/images/left-arrow.png"></button><button type="button" role="presentation" class="owl-next"><img src="/site/templates/static/assets/images/right-arrow.png"></button></div><div class="owl-dots disabled"></div></div>
 
-          <label class="c-newsletter__emailcheckbox">Ich akzeptiere die <a href=""><u>Datenschutzgrundverordnung</u></a> von K'
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
+                <div class="c-gallery owl-theme js-basalt owl-loaded owl-drag" style="display: none;"><div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s;"><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/schmitt_basalt_70x100cm_frame_kla.jpg" src="https://k-strich.de/site/assets/files/1095/schmitt_basalt_70x100cm_frame_kla.jpg" style="opacity: 1;"></div>
+    			        <div class="gallery__caption">Aus der Serie Basalt | 2018 | 70 x 100 cm</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/1020162-1_30x40cm.jpg"></div>
+    			        <div class="gallery__caption">30 x 40 cm</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/1020189-1.jpg"></div>
+    			        <div class="gallery__caption">30 x 22,5 cm</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/1010769-1_kla.jpg"></div>
+    			        <div class="gallery__caption">22,5 x 30 cm</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/schmitt_basalt_22-5x30_kla.jpg"></div>
+    			        <div class="gallery__caption">22,5 x 30 cm</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/1010770_kla.jpg"></div>
+    			        <div class="gallery__caption">22,5 x 30 cm</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/1020270-1_kla.jpg"></div>
+    			        <div class="gallery__caption">22,5 x 30 cm</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/1010734-1_30x40cm_kla.jpg"></div>
+    			        <div class="gallery__caption">30 x 40 cm</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/1020354-1.jpg"></div>
+    			        <div class="gallery__caption">22,5 x 30 cm</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/1020757-1_30x40cm_kla.jpg"></div>
+    			        <div class="gallery__caption">30 x 40 cm</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/1010768_60x45cm_kla.jpg"></div>
+    			        <div class="gallery__caption">45 x 60 cm</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/basalt_00.jpg"></div>
+    			        <div class="gallery__caption">Basalt - Ursprung Gebrauch Überhöhung | 2018 | Spector Books, Leipzig</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/basalt_01.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/basalt_02.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/basalt_03.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/basalt_04.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/basalt_05.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/basalt_07.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/basalt_08.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/basalt_09.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/basalt_10.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1095/basalt_11.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><img src="/site/templates/static/assets/images/left-arrow.png"></button><button type="button" role="presentation" class="owl-next"><img src="/site/templates/static/assets/images/right-arrow.png"></button></div><div class="owl-dots disabled"></div></div><div class="c-gallery owl-theme js-abbruch-aller-beziehungen owl-loaded owl-drag" style="display: none;"><div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s;"><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1189/abbruch_aller_beziehungen_vorschau_2.jpg" src="https://k-strich.de/site/assets/files/1189/abbruch_aller_beziehungen_vorschau_2.jpg" style="opacity: 1;"></div>
+    			        <div class="gallery__caption">2016 | 7 Fotografien | 24 x 32 cm</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1189/abbruch_aller_beziehungen_vorschau_3.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1189/abbruch_aller_beziehungen_vorschau_4.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1189/abbruch_aller_beziehungen_vorschau_5.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1189/abbruch_aller_beziehungen_vorschau_6.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1189/abbruch_aller_beziehungen_vorschau_7.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1189/abbruch_aller_beziehungen_vorschau_8.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1189/abbruch_aller_beziehungen_vorschau_9.jpg"></div>
+    			        <div class="gallery__caption">Ausstellungsansicht Museum Abteiberg, Mönchengladbach | 2016</div>
+    			      </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><img src="/site/templates/static/assets/images/left-arrow.png"></button><button type="button" role="presentation" class="owl-next"><img src="/site/templates/static/assets/images/right-arrow.png"></button></div><div class="owl-dots disabled"></div></div><div class="c-gallery owl-theme js-so-viel-wie-noetig-so-wenig-wie-moeglich owl-loaded owl-drag" style="display: none;"><div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s;"><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1097/so_viel_wie_noetig_so_wenig_wie_moeglich_web_1.jpg" src="https://k-strich.de/site/assets/files/1097/so_viel_wie_noetig_so_wenig_wie_moeglich_web_1.jpg" style="opacity: 1;"></div>
+    			        <div class="gallery__caption">2016 | 13 Bildtafeln | Pigmentdrucke | Bildmaß 18 x 24 cm | Rahmenmaß 40 x 60 cm</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1097/so_viel_wie_noetig_so_wenig_wie_moeglich_web_2.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1097/so_viel_wie_noetig_so_wenig_wie_moeglich_web_3.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1097/so_viel_wie_noetig_so_wenig_wie_moeglich_web_4.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1097/so_viel_wie_noetig_so_wenig_wie_moeglich_web_5.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1097/so_viel_wie_noetig_so_wenig_wie_moeglich_web_6.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1097/so_viel_wie_noetig_so_wenig_wie_moeglich_web_7.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1097/so_viel_wie_noetig_so_wenig_wie_moeglich_web_8.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1097/so_viel_wie_noetig_so_wenig_wie_moeglich_web_9.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1097/so_viel_wie_noetig_so_wenig_wie_moeglich_web_10.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1097/so_viel_wie_noetig_so_wenig_wie_moeglich_web_11.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1097/so_viel_wie_noetig_so_wenig_wie_moeglich_web_12.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1097/so_viel_wie_noetig_so_wenig_wie_moeglich_web_13.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1097/so_viel_wie_noetig_so_wenig_wie_moeglich_web_14.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><img src="/site/templates/static/assets/images/left-arrow.png"></button><button type="button" role="presentation" class="owl-next"><img src="/site/templates/static/assets/images/right-arrow.png"></button></div><div class="owl-dots disabled"></div></div><div class="c-gallery owl-theme js-die-neue-ungleichheit owl-loaded owl-drag" style="display: none;"><div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s;"><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1188/wuestenrot_bildtafeln_1.jpg" src="https://k-strich.de/site/assets/files/1188/wuestenrot_bildtafeln_1.jpg" style="opacity: 1;"></div>
+    			        <div class="gallery__caption">8 Bildtafeln, 70x100cm</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1188/wuestenrot_bildtafeln_2.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1188/wuestenrot_bildtafeln_3.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1188/wuestenrot_bildtafeln_4.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1188/wuestenrot_bildtafeln_5.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1188/wuestenrot_bildtafeln_6.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1188/wuestenrot_bildtafeln_7.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1188/wuestenrot_bildtafeln_8.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><img src="/site/templates/static/assets/images/left-arrow.png"></button><button type="button" role="presentation" class="owl-next"><img src="/site/templates/static/assets/images/right-arrow.png"></button></div><div class="owl-dots disabled"></div></div><div class="c-gallery owl-theme js-die-autogerechte-stadt owl-loaded owl-drag" style="display: none;"><div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s;"><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4574.jpg" src="https://k-strich.de/site/assets/files/1096/dscf4574.jpg" style="opacity: 1;"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4596.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4612.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4651.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4676.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4683.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4743.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4765.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4805.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4821.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4829.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4845.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4856.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4874.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4878.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4923.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4927.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4946.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf4976.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf5055.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf5063.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf5068.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf5071.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1096/dscf5084.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><img src="/site/templates/static/assets/images/left-arrow.png"></button><button type="button" role="presentation" class="owl-next"><img src="/site/templates/static/assets/images/right-arrow.png"></button></div><div class="owl-dots disabled"></div></div><div class="c-gallery owl-theme js-geraeusch-einer-fernen-brandung owl-loaded owl-drag" style="display: none;"><div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s;"><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1190/geraeusch_cover_00.jpg" src="https://k-strich.de/site/assets/files/1190/geraeusch_cover_00.jpg" style="opacity: 1;"></div>
+    			        <div class="gallery__caption">2014 | Spector Books, Leipzig</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1190/geraeusch_spread_01.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1190/geraeusch_spread_02.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1190/geraeusch_spread_03.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1190/geraeusch_spread_04.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1190/geraeusch_spread_05.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1190/geraeusch_spread_06.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><img src="/site/templates/static/assets/images/left-arrow.png"></button><button type="button" role="presentation" class="owl-next"><img src="/site/templates/static/assets/images/right-arrow.png"></button></div><div class="owl-dots disabled"></div></div><div class="c-gallery owl-theme js-glossar owl-loaded owl-drag" style="display: none;"><div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s;"><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1191/die_autogerechte_stadt_k_03a.jpg" src="https://k-strich.de/site/assets/files/1191/die_autogerechte_stadt_k_03a.jpg" style="opacity: 1;"></div>
+    			        <div class="gallery__caption">Glossar. Urformen der Städtebaukunst | 2014 | 12 Pigment Prints | 11,5 x 16 cm</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1191/glossar_zur_autogerechten_stadt_2014_16x11-5_1.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1191/glossar_zur_autogerechten_stadt_2014_16x11-5_2.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1191/glossar_zur_autogerechten_stadt_2014_16x11-5_3.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1191/glossar_zur_autogerechten_stadt_2014_16x11-5_4.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1191/glossar_zur_autogerechten_stadt_2014_16x11-5_5.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1191/glossar_zur_autogerechten_stadt_2014_16x11-5_6.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1191/glossar_zur_autogerechten_stadt_2014_16x11-5_7.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1191/glossar_zur_autogerechten_stadt_2014_16x11-5_8.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1191/glossar_zur_autogerechten_stadt_2014_16x11-5_9.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1191/glossar_zur_autogerechten_stadt_2014_16x11-5_10.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1191/glossar_zur_autogerechten_stadt_2014_16x11-5_11.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1191/glossar_zur_autogerechten_stadt_2014_16x11-5_12.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><img src="/site/templates/static/assets/images/left-arrow.png"></button><button type="button" role="presentation" class="owl-next"><img src="/site/templates/static/assets/images/right-arrow.png"></button></div><div class="owl-dots disabled"></div></div><div class="c-gallery owl-theme js-mannesmannufer owl-loaded owl-drag" style="display: none;"><div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s;"><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_4.jpg" src="https://k-strich.de/site/assets/files/1192/mannesmann_4.jpg" style="opacity: 1;"></div>
+    			        <div class="gallery__caption">16 Postkarten | 2014</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_5.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_6.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_7.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_8.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_9.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_10.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_11.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_12.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_13.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_14.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_15.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_16.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_17.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_18.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_19.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_20.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_21.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_22.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_23.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_24.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_25.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_26.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_27.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_28.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_29.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_30.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_31.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_32.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1192/mannesmann_33.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><img src="/site/templates/static/assets/images/left-arrow.png"></button><button type="button" role="presentation" class="owl-next"><img src="/site/templates/static/assets/images/right-arrow.png"></button></div><div class="owl-dots disabled"></div></div><div class="c-gallery owl-theme js-kunst-nach-45 owl-loaded owl-drag" style="display: none;"><div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s;"><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1193/ausstellungsansicht-_kunstfruhling-_bremen_2014.jpg" src="https://k-strich.de/site/assets/files/1193/ausstellungsansicht-_kunstfruhling-_bremen_2014.jpg" style="opacity: 1;"></div>
+    			        <div class="gallery__caption">Ausstellungsansicht Galerie K' | Kunstfrühling, Bremen | 2014</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1193/arne_schmitt_-_kunst_nach_45_40x50cm_-_einzelansichten_1.jpg"></div>
+    			        <div class="gallery__caption">2011 | 9 Fotografien</div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1193/arne_schmitt_-_kunst_nach_45_40x50cm_-_einzelansichten_2.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1193/arne_schmitt_-_kunst_nach_45_40x50cm_-_einzelansichten_3.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1193/arne_schmitt_-_kunst_nach_45_40x50cm_-_einzelansichten_4.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1193/arne_schmitt_-_kunst_nach_45_40x50cm_-_einzelansichten_5.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1193/arne_schmitt_-_kunst_nach_45_40x50cm_-_einzelansichten_6.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1193/arne_schmitt_-_kunst_nach_45_40x50cm_-_einzelansichten_7.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1193/arne_schmitt_-_kunst_nach_45_40x50cm_-_einzelansichten_8.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div><div class="owl-item"><div class="gallery__item">
+    			        <div class="gallery__imagewrapper"><img class="gallery__image owl-lazy" data-src="https://k-strich.de/site/assets/files/1193/arne_schmitt_-_kunst_nach_45_40x50cm_-_einzelansichten_9.jpg"></div>
+    			        <div class="gallery__caption"></div>
+    			      </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><img src="/site/templates/static/assets/images/left-arrow.png"></button><button type="button" role="presentation" class="owl-next"><img src="/site/templates/static/assets/images/right-arrow.png"></button></div><div class="owl-dots disabled"></div></div><div class="l-grid-u-1 l-grid-u-sm-3-6 l-grid-u-md-12-24" style="padding-right:15px"><p><a href="#work" class="sidebar__a js-switcher is_active" data-id="zeichen-der-zeit">Zeichen der Zeit</a><br><a href="#work" class="sidebar__a js-switcher" data-id="basalt">Basalt</a><br><a href="#work" class="sidebar__a js-switcher" data-id="abbruch-aller-beziehungen">Abbruch aller Beziehungen</a><br><a href="#work" class="sidebar__a js-switcher" data-id="so-viel-wie-noetig-so-wenig-wie-moeglich">So viel wie nötig, so wenig wie möglich</a><br><a href="#work" class="sidebar__a js-switcher" data-id="die-neue-ungleichheit">Die neue Ungleichheit</a><br><a href="#work" class="sidebar__a js-switcher" data-id="die-autogerechte-stadt">Die autogerechte Stadt</a><br><a href="#work" class="sidebar__a js-switcher" data-id="geraeusch-einer-fernen-brandung">Geräusch einer fernen Brandung</a><br><a href="#work" class="sidebar__a js-switcher" data-id="glossar">Glossar</a><br><a href="#work" class="sidebar__a js-switcher" data-id="mannesmannufer">Mannesmannufer</a><br><a href="#work" class="sidebar__a js-switcher" data-id="kunst-nach-45">Kunst nach 45</a><br></p></div><div class="l-grid-u-1 l-grid-u-sm-3-6 l-grid-u-md-12-24"><div class="c-gallerytext js-zeichen-der-zeit" style=""><p>Zeichen der Zeit<br>
+    Zur Geschichte eines geschichtslosen Gebiets genannt Parkstadt&nbsp;Schwabing</p>
 
-        </div>
-      </div>
-    </section>
+    <p>14 Straßen, die alle nach Persönlichkeiten des Bauhaus benannt sind – in der bodenständigen Gestaltung Münchner Straßenschilder gefasst – vor dem Hintergrund generischer Büro- und Wohnarchitektur der Gegenwart. Diese verdichtete Konstellation von Zeichen bildet den Rahmen für Arne Schmitts Arbeit zur Parkstadt Schwabing im Norden von München: eine emblematische Neuplanung der neoliberalen 1990er Jahre, bestehend aus Büroriegeln, ein paar Wohnhäusern und einem Streifen Grün. Von einer fotografischen Beschreibung des Gebiets sieht Schmitt ab. Stattdessen verdichtet er seine Funktionen und Bedeutungen in 34 Schwarzweißfotografien von Schildern, die Bände sprechen über jene wirtschaftlichen wie politischen Kräfte, die auf diesen 40 ha städtischen Bodens gewirkt haben. Planungs- wie wirtschaftsgeschichtliche Kurztexte ergänzen diese Bilanz eines geschichtslosen Gebiets, zu dessen jüngerer Geschichte auch das fotografische Langzeitprojekt Areal des Fotografen Joachim Brohm gehört.&nbsp;</p></div><div class="c-gallerytext js-basalt" style="display: none;"><p>Das Fotobuch von Arne Schmitt ist einem einzigen Material gewidmet: Basalt, einem vulkanischen Gestein, das in den Steinbrüchen der Osteifel von Mayen und Mendig schon seit Jahrtausenden abgebaut wird. Seine Härte und gleichzeitig poröse Struktur machten ihn zum idealen Rohmaterial für Mühlsteine und damit zu einem weit gehandelten Exportprodukt. In der Region selbst wurden auch Häuser aus Basalt errichtet. In der Gründerzeit entwickelte sich eine ganze Baukultur um das Material. Viele Straßenzüge erscheinen deshalb noch heute in mattem Dunkelgrau. In zahlreichen Schwarzweiß-Fotografien stellt Schmitt die verschiedenen Zustände, Bearbeitungen und Verwendungen des Gesteins&nbsp; nebeneinander. Die Konstante des natürlichen Materials lässt die Transformation in ein kulturelles Produkt um so deutlicher hervortreten.&nbsp;</p></div><div class="c-gallerytext js-abbruch-aller-beziehungen" style="display: none;"></div><div class="c-gallerytext js-so-viel-wie-noetig-so-wenig-wie-moeglich" style="display: none;"><p>SO VIEL WIE NÖTIG, SO WENIG WIE MÖGLICH<br>
+    Zur symbolischen Ökonomie des Sulzer Areals<br>
+    I.<br>
+    Am 3. Juli 1937 versammelten sich die Arbeiter der Sulzer Werke in der Montagehalle. Grund war kollektiver Unmut: der merkliche Aufschwung, den das Unternehmen seit der Weltwirtschaftskrise erlebt hatte, war nicht in Form von besseren Arbeitsbedingungen und gesteigertem Verdienst an die Arbeiterschaft weitergegeben geworden. Dies wollte man nun einfordern, notfalls mithilfe eines Streiks erkämpfen. Nach einigen Beschwichtigungsversuchen leitender Angestellter soll Robert Sulzer selbst, damals Oberhaupt des Unternehmens, das Rednerpult betreten und die Arbeiter vorwurfsvoll angehalten haben, von solch drastischen Mitteln abzusehen: man habe bisher schließlich immer zu einer Einigung gefunden. Die daraufhin ausgehandelte Lohnerhöhung blieb angeblich nur knapp hinter der geforderten zurück – und legte den Grundstein für den sogenannten Arbeitsfrieden: eine Vereinbarung, in der Arbeiternehmer zugunsten verhandelbarer Privilegien auf das Streikrecht verzichten.<br>
+    II.<br>
+    Bis in die 1980er Jahre hinein bildete das Gelände der Sulzer Werke sowohl wirtschaftlich als auch städtebaulich das Herz der Stadt Winterthur. Dieser zentralen Bedeutung stand die Tatsache entgegen, das abgesehen von Arbeitern und Angestellten niemand hinter die Tore und Mauern blicken konnte, die das Areal umgaben. Es war der Öffentlichkeit völlig unzugänglich und wurde daher im Volksmund die verbotene Stadt genannt. 1988 gab Sulzer bekannt, den Produktionsstandort in Winterthur Stadtmitte gänzlich aufgeben zu wollen und stellte bald darauf einen Masterplan zur Neubebauung des Areals vor. Dieser basierte auf dem völligen Abriss der bisherigen Industriearchitektur – an ihrer Stelle sollten moderne Büro- und Wohngebäude entstehen. Dem Konzern schlug eine Welle der Entrüstung entgegen, sowohl aus Architektenkreisen als auch aus der Stadtbevölkerung. Beide hingen an den identitätsstiftenden Bauten und forderten ihre (zumindest teilweise) Erhaltung. Sulzer sah sich gezwungen einzulenken und beteiligte in der Folge die Stadt, den Heimatschutz sowie Architekten und Städtebauer an der Neuplanung. Währenddessen durften Zwischennutzer aus dem kreativen Bereich zu günstigen Mieten in die leer stehenden Gebäude einziehen. Sie halfen damit, deren Verfall zu verhindern – und gleichzeitig deren Wert zu steigern.<br>
+    III.<br>
+    Im Jahre 2010 verkaufte die Sulzer Immobilien AG ihren verblieben Besitzanteil am Areal an die Bau- und Projektentwicklerfirma Implenia. Diese kümmert sich seitdem um die schrittweise Umnutzung und Neubebauung, wobei eine harmonische Mischnutzung aus Wohnen, Arbeiten, Bildung und Freizeit angestrebt wird. Um diesem Prozess Transparenz zu verleihen, gibt die Firma das Sulzer Areal Magazin (SAM) heraus, in dem ausgewählten Planern, Politikern und Nutzern das Wort gegeben wird. So harmonisch wie die angestrebte Nutzungsstruktur nimmt sich auch die hier geführte Diskussion aus: Politiker äußern ihre persönlichen Erwartungen an die Zukunft des Quartiers; Architekten unterstreichen die fachliche Richtigkeit der aktuellen Planungen; auf der letzten Seite äußern jetzige und zukünftige Nutzer ihre Fragen und Bedenken und erhalten beruhigende redaktionelle Antworten. Das nebenstehende Impressum ziert das Logo von Implenia, dem größten Bauunternehmen der Schweiz: eine weiße Margeritenblüte.</p></div><div class="c-gallerytext js-die-neue-ungleichheit" style="display: none;"><p>2015 | 8 Bildtafeln | Bildband | Spector Books, Leipzig</p>
+
+    <p>Die neue Ungleichheit</p>
+
+    <p>Die neue Ungleichheit ist ein Versuch, sich dem Verhältnis von Architektur und Neoliberalismus anzunähern: Was könnte neoliberale Architektur sein? Weist sie einen bestimmten Stil auf oder wäre sie eher politisch/ökonomisch zu definieren? Die Arbeit begegnet der komplexen Fragestellung mit einer betont einfachen Strategie: einem abgesteckten Stadtspaziergang durch die Stadt Köln, vorbei an Gebäuden verschiedenster Stile und Epochen, die formal kaum Gemeinsamkeiten aufweisen. Ihr Zusammenhang ist vielmehr struktureller Natur: ihre Zustände, Wertschätzungen und politischen Einbindungen zeichnen ein Bild der architektonischen Gegenwart.<br>
+    Die Form der Arbeit ist ein klassischer Bildband, bestehend aus Schwarzweißfotografien und einem Essay des Schriftstellers Thorsten Krämer – in Referenz an eine Buchtradition der 50er und 60er Jahre, die politische und gesellschaftliche Kritik der Gegenwart mit fotografischen Darstellungen der Stadt verknüpfte.<br>
+    &nbsp;</p></div><div class="c-gallerytext js-die-autogerechte-stadt" style="display: none;"><p>2014 | Bildprojektion</p>
+
+    <p>Dem in Bremen geborenen Stadtplaner und Architekten Fritz Schumacher wird das Bonmot zugeschrieben, Städtebau sei "die Kunst des Möglichen". Mehr noch als die Architektur bestimmt die Verkehrsplanung den Gebrauch der Stadt – das Fließen von Menschen und Fahrzeugen, die Aufteilung in Grundflächen zu errichtender Bauten. Gleichzeitig unterliegt sie sehr viel stärker praktischen Erwägungen und tritt weniger direkt in den Blick als die sehr viel repräsentativer wirkende Architektur – noch heute ist häufig die Rede von "Körper" und "Antlitz" der Stadt.</p>
+
+    <p>Besonders in der Zeit des Wiederaufbaus der kriegszerstörten bundesdeutschen Städte war die Frage des zu planenden Straßennetzes primär: erst wenn der äußere Rahmen, die innere Struktur feststünde, könne mit dem eigentlichen Bauen begonnen werden. Wie diese Struktur aussehen sollte, ob sie sich an dem Grundriss der alten Stadt orientieren oder völlig frei formieren sollte, war Gegenstand hitziger Diskussionen. So entstand eine ganze Reihe programmatischer Schriften und Begriffe.</p>
+
+    <p>Arne Schmitt verhandelt den Begriff der "autogerechten Stadt" in Form von Text, Fotografie, Projektion und Buch. Dabei untersucht er die reaktionären Implikationen und progressiven Anteile der Nachkriegsstadtplanung, in der dem Auto- und Fußgängerverkehr eine je eigene Sphäre im Stadtraum geschaffen werden sollte. Auf diese Weise sollte ein reibungsloser Verkehrsfluss, sicherer Fußgängerverkehr und ruhiges Wohnen ermöglicht werden. Der Blick, den Schmitt auf spezifische städtebauliche Objekte wie die Sennestadt bei Bielefeld und die Hauptverkehrsstraßen Hannovers richtet, ist der konkreten Gegenwart ebenso eng verhaftet wie dem historischen und ideologischen Boden, auf dem diese gewachsen sind.</p>
+
+    <p>&nbsp;</p></div><div class="c-gallerytext js-geraeusch-einer-fernen-brandung" style="display: none;"><p>Das Buch „Geräusch einer fernen Brandung“ besteht lediglich aus einem Titel, 63 Farbfotografien und einem historischen Zeitungsartikel. Alle drei Elemente beziehen sich auf einen emblematischen Ort deutscher Großstädte, der Nachkriegszeit und Gegenwart aufs Tiefste verbindet: jene breiten Hauptverkehrsstraßen, die allerorts Ringe um Kernstädte bilden und Schneisen durch Stadtflächen ziehen. Sie stehen für ein zentrales Moment urbanen Lebens: die Anwesenheit und gleichzeitige Beziehungslosigkeit von Bewohnern und Benutzern der Stadt – einen kleinteiligen Individualverkehr innerhalb einer umfassenden Straßenverkehrsordnung.<br>
+    So allgegenwärtig und banal jene Straßen wirken, so spezifisch und historisch relevant ist ihre Geschichte. Durch sie wurde die strukturelle Grundlage für die wiederaufzubauenden Städte nach 45 gelegt. Schmitt verhandelt somit das Allgemeine im Spezifischen: er fotografiert ausschließlich in Hannover, wo Stadtbaurat Rudolf Hillebrecht von den späten 1940er Jahren an mit dem Wiederaufbau der stark zerstörten Stadt betraut war und das Musterbeispiel eines Verkehrsnetzes entwarf, das Städteplaner über die Landesgrenzen hinaus begeisterte. Dazu verhalf ihm sein praxisorientiertes Organisationstalent, das er zur Zeit des Nationalsozialismus geschult hatte, genauso wie seine volksnahe Art - in unzähligen Bürgerversammlungen leistete er persönliche Überzeugungsarbeit für seine Pläne.<br>
+    Hillebrecht ist eine exemplarische Figur der frühen Bundesrepublik. Noch bis zum Kriegsende war er unter der Leitung von Albert Speer an der Planung der städtebaulichen Form des Endsieges beteiligt. Nur wenige Jahre später war er wieder in Amt und Würden - und wirkte an der Gestalt der Stadt in der Bundesrepublik mit. So sagte er später über das geschwungene Straßennetz Hannovers: „Dieses Schwingen habe ich als Gefühl unserer Zeit empfunden, im Kontrast zum Gefühl des Marschierens oder des Geradeausgehens.“<br>
+    All das rauscht in Schmitts detailreichen Fotografien mit – in Straßennamen, Autos, Fassaden und Firmenemblemen, die Stücke eines Mosaiks der bundesrepublikanischen Gegenwart bilden.</p>
+
+    <p>&nbsp;</p></div><div class="c-gallerytext js-glossar" style="display: none;"></div><div class="c-gallerytext js-mannesmannufer" style="display: none;"><p>„Denn unter Stil verstehen wir doch den einheitlichen Formaus-<br>
+    druck, den die gesamten&nbsp; Geistes-<br>
+    äußerungen einer Epoche ergeben.<br>
+    Der einheitliche, nicht aber der<br>
+    besondere oder gar der absonder-<br>
+    liche Charakter ist das Ausschlaggebende.“<br>
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>
+    Peter Behrens, 1917</p>
+
+    <p>&nbsp;</p>
+
+    <p>„Ein Haus steht für eine Idee,<br>
+    eine Stadt für eine staatliche<br>
+    Ordnung!“</p>
+
+    <p>&nbsp;</p>
+
+    <p><br>
+    Friedrich Tamms, 1967</p>
+
+    <p>&nbsp;</p>
+
+    <p>„Ich bin der Meinung, dass die<br>
+    Architektur im 21. Jahrhundert<br>
+    enorm an Bedeutung verlieren<br>
+    wird. Nicht einzelne pompöse<br>
+    Bauten prägen künftig die Städte,<br>
+    sondern die Kultur einer Stadt.“</p>
+
+    <p>&nbsp;</p>
+
+    <p>Albert Speer d. J., 2013</p></div><div class="c-gallerytext js-kunst-nach-45" style="display: none;"><p>Arne Schmitt zeigt in seiner Fotoreihe Ausschnitte unterschiedlicher Bauwerke: Garageneinfahrten, Unterführungen, Bürogebäude, Kunst im öffentlichen Raum. Es handelt sich dabei meist um Bauten, die im weiteren Sinne der bundesdeutschen Nachkriegsmoderne zuzurechnen sind.<br>
+    “Kunst nach 45” ist eine unscharfe Bezeichnung für Kunst, die im Nachkriegsdeutschland entstanden ist. Sowohl informelle als auch konzeptuelle Malerei, die Gruppe Zero oder auch Joseph Beuys werden dazu gerechnet. Es gibt Auktionen und Galerien für “Kunst nach 45” - eine tatsächliche Stilbezeichnung ist es nicht. Doch behauptet der Terminus eine neue und unschuldige deutsche Kunst, die mit “vor 45” genauso wenig zu tun hat, wie mit “vor 33”. Eine Art von Geschichtsvergessenheit, die im Architekturdiskurs auf eine ähnliche Weise funktioniert. Die Ausschnitte der Bauwerke auf Schmitts Fotos erinnern an unbestimmte Werke westdeutscher Nachkriegskunst.</p>
+
+    <p>&nbsp;</p></div></div><h5 name="cv" class="c-edition__headline">CV</h5><div class="l-grid-u-1 l-grid-u-sm-3-6 l-grid-u-md-12-24" style="padding-right:15px"><p></p><p><strong>Ausstellungen</strong></p>
+
+    <p>2020<br>
+    Räson, Wilhelm Hack Museum, Ludwigshafen<br><br>
+    2019<br>
+    Zeichen der Zeit. Zur Geschichte eines geschichtslosen Gebiets genannt Parkstadt Schwabing, Kunstraum Münschen<br>
+    die Insel (mit Fari Shams), Skulpturenmuseum Glaskasten, Marl</p>
+
+    <p>2018<br>
+    Basalt. Ursprung Gebrauch Überhöhung, Bielefelder Kunstverein<br>
+    Persönlichkeit und System, Stadtmuseum München<br><br>
+ 2017<br>
+    Some Places to Read, Richas Digest, Köln<br>
+    In neuer Pracht, Jacky Strenz, Frankfurt a.M.<br>
+    Alleinanspruch, mit Nico Joana Weber, Temporary Gallery, Köln<br><br>
+ 2016<br>
+    Zwei Arbeiten, Galerie K', Bremen<br>
+    Inseln der Differenz, Kjubh Kunstverein, Ebertplatz Köln<br><br>
+ 2015<br>
+    Einer unter Vielen, Jacky Strenz, Frankfurt a.M.<br><br>
+ 2014<br>
+    Die autogerechte Stadt. Ein Weg aus dem Begriffs-Chaos, Galerie K', Bremen<br><br>
+ 2013<br>
+    Bunker-Erfahrung, kjubh, Köln<br><br>
+ 2012<br>
+    Wenn Gesinnung Form wird / Verflechtungen, Sprengel Museum, Hannover<br>
+    Spot-Specific, mit Stef Renard, Galerie 52, Folkwang UdK, Essen<br>
+    UN City, Wien, AT<br><br>
+ 2010<br>
+    Projektraum Mikro, Düsseldorf<br><br>
+    2009<br>
+    It was the Streets that raised me, Streets that paid me, Streets that made me a Product of my Environment, mit Andrzej Steinbach, HGB Leipzig<br><br>
+ 2008<br>
+    Vierten Grades, mit Daniel Niggemann, Fotofolgen / Galerie der HfbK Hamburg<br><br><br><strong>Ausstellungsbeteiligungen (Auswahl)</strong></p>
+
+    <p>2019<br>
+    Vom Leben in Industrielandschaften. eine fotografische Bestandsaufnahme, Leopold Hösch Museum, Düren<br>
+    Historiker*innen, Galerie K', Bremen<br>
+    Historiker*innen, Haus 1, Berlin<br>
+    Karl Schmidt Rottluff Stipendium. Die Ausstellung 2019, Kunsthalle Düsseldorf</p>
+
+    <p> 2018<br>
+    Kunstpreis der Böttcherstraße in Bremen, Kunsthalle Bremen<br>
+    1938. Geburtstagsfest mit Gästen, Sprengel Museum Hannover<br><br>
+ 2017<br>
+    Arbeiten gehen. Eine Ausstellung der Galerie BRD, Galerie Jahn und Jahn, München<br>
+    The Photographic I - Other Pictures, S.M.A.K., Ghent<br>
+    Global Players, Biennale für aktuelle Fotografie, Kunstverein Ludwigshafen<br>
+    Asymmetrische Architexturen, Kunstverein für die Rheinlande und Westfalen, Düsseldorf<br>
+    New Positions, Förderkoje mit Galerie Jacky Strenz, Art Cologne, Köln<br>
+ <br>
+    2016<br>
+    In Deutschland reloaded (II), Galerie Kicken, Berlin<br>
+    Von den Strömen der Stadt, Museum Abteiberg, Mönchengladbach<br>
+    Dokumentarfotografie Förderpreise der Wüstenrot Stiftung, Museum für Photographie, Braunschweig</p><p></p></div><div class="l-grid-u-1 l-grid-u-sm-3-6 l-grid-u-md-12-24"><p style="margin-left:0cm;margin-right:0cm;"><strong>Bücher</strong></p>
+
+    <p style="margin-left:0cm;margin-right:0cm;">2020<br>
+    Zeichen der Zeit.&nbsp;Zur Geschichte eines geschichtslosen Gebiets genannt Parkstadt Schwabing, Spector Books, Leipzig</p>
+
+    <p style="margin-left:0cm;margin-right:0cm;">2018<br>
+    Basalt. Ursprung Gebrauch Überhöhung, Spector Books, Leipzig</p>
+
+    <p style="margin-left:0cm;margin-right:0cm;">2016<br>
+    Lob der Peitschenlampe, Eigenverlag</p>
+
+    <p style="margin-left:0cm;margin-right:0cm;">2015<br>
+    Die neue Ungleichheit. Ein Bildband entlang neoliberaler Architekturen (mit Thorsten Krämer), Spector Books, Leipzig</p>
+
+    <p style="margin-left:0cm;margin-right:0cm;">2014<br>
+    Geräusch einer fernen Brandung, Spector Books, Leipzig</p>
+
+    <p style="margin-left:0cm;margin-right:0cm;">2012<br>
+    Wenn Gesinnung Form wird. Eine Essaysammlung zur Nachkriegsarchitektur der BRD, Spector Books, Leipzig<br>
+    Concrete Philosophy. On the specifics of a universal exhibition, Eigenverlag<br>
+    It was the streets that raised me, streets that paid me, streets that made me a product of my environment, mit Andrzej Steinbach, Spector Books, Leipzig</p>
+
+    <p style="margin-left:0cm;margin-right:0cm;">2009<br>
+    FUTURE TOGETHER NOW, Buchprojekt von Enrico Grunert, Aglaia Konrad, Ina Kwon, Tobias Neumann, Willem Oorebeek, Arne Schmitt, Andrzej Steinbach u.a., Institut für Buchkunst Leipzig<br>
+    &nbsp;</p>
+
+    <p style="margin-left:0cm;margin-right:0cm;"><strong>Künstlerbücher</strong></p>
+
+    <p style="margin-left:0cm;margin-right:0cm;">2011<br>
+    Rebuild to Destroy, 18,5x27cm, SW-Laserdruck,SC, Auflage: 30</p>
+
+    <p style="margin-left:0cm;margin-right:0cm;">2010<br>
+    Manche Dinge ändern sich nie, 26x39cm, SW-Laserdruck, HC, Auflage: 10<br>
+    Nationalgalerie, 14x13cm, SW-Laserdruck, Heft, Auflage: 50<br>
+    o.T.(Zeitgenössische Deutsche Fotografie), 17,3x23cm, SW- und Farblaserdruck, Heft mit Poster im Schuber, Auflage: 20</p>
+
+    <p style="margin-left:0cm;margin-right:0cm;">2009<br>
+    o.T. (Zeitgenössische Deutsche Fotografie), 17,3x23cm, SW- und Farblaserdruck, Heft mit Poster im Schuber, Auflage: 20<br>
+    Pankow, 35x24cm, SW-Laserdruck, HC, Auflage: 15<br>
+    Das höchste Gebot, 18x24cm, Farblaserdruck, Heft, Auflage: 15</p>
+
+    <p style="margin-left:0cm;margin-right:0cm;">2008<br>
+    Resort, 12x16cm, SW-Laserdruck, Heft, Auflage: 25<br>
+    Die Herren, 16x24cm, Farblaserdruck, HC, Auflage: 8<br>
+    Geräusch einer fernen Brandung, 18,5x25cm, Farblaserdruck, HC, Auflage: 5</p>
+
+    <p style="margin-left:0cm;margin-right:0cm;">2007<br>
+    2006™, 25x19cm, Ringbuch aus C-Prints, Auflage: 3<br>
+    &nbsp;</p>
+
+    <p style="margin-left:0cm;margin-right:0cm;"><strong>Sammlungen (Auswahl)</strong></p>
+
+    <p style="margin-left:0cm;margin-right:0cm;">Fotomuseum Winterthur<br>
+    Kunstsammlungen Zwickau<br>
+    Museum Folkwang, Essen<br>
+    Museum Ludwig, Köln<br>
+    Niedersächsische Sparkassenstiftung, Hannover<br>
+    Sprengel Museum, Hannover<br>
+    Studienzentrum für Künstlerpublikationen, Bremen</p>
+
+    <p style="margin-left:0cm;margin-right:0cm;">&nbsp;</p></div></article>
 
 
-    <section class="c-adress c-address--line">
-      <div class="l-grid-g">
-        <div class="l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-14-24">
-          <img src="./assets/images/logo.png" class="c-address__logo">
-        </div>
-        <div class="l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-10-24">
-          <p> Galerie K'<br>
-              Alexanderstraße 9b<br>
-              28203 Bremen<br><br>
-
-              Telefon<br>
-              0421 - 161 426 92<br><br>
-
-              E-Mail<br>
-              info [at] k-strich.de<br><br>
-
-              Öffnungszeiten<br>
-              Mittwoch - Freitag, 14 - 18 Uhr<br>
-              Samstag, 12 - 16 Uhr<br>
-              Weitere Termine nach Vereinbarung<br><br>
-
-              Soziale Netzwerke<br>
-              facebook<br>
-              YouTube<br>
-              SoundCloud<br><br>
-
-              mo' tapes<br>
-              bandcamp<br>
-              facebook<br>
-              YouTube<br>
-              SoundCloud</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="c-imprint c-imprint--line">
-      <h5 class="c-imprint__headline--sin">Imprint</h5>
-
-      <div class="l-grid-g">
-        <div class="l-grid-u-1 l-grid-u-sm-3-6 l-grid-u-md-8-24">
-          <p style="padding-right: .5rem">
-            Angaben gemäß § 5 TMG<br>
-            K' – Zentrum Aktuelle Kunst<br>
-            Radoslaw Krolczyk und Eric Peters GbR<br>
-            Alexanderstraße 9b<br>
-            28203 Bremen<br><br>
-
-            Ust-IdNr.: DE287155874<br>
-            Finanzamt Bremen<br><br>
-
-            Telefon<br>
-            +49 (0) 421 - 161 426 92<br>
-            …
-          </p>
-        </div>
-        <div class="l-grid-u-1 l-grid-u-sm-3-6 l-grid-u-md-8-24">
-          <p style="padding-right: .5rem">
-            E-Mail<br>
-            info [at] k-strich.de<br><br>
-
-            Vertreten durch<br>
-            Radoslaw Krolczyk<br>
-            Eric Peters<br><br>
-
-            Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV<br>
-            ...
-          </p>
-        </div>
-        <div class="l-grid-u-1 l-grid-u-sm-3-6 l-grid-u-md-8-24">
-          <p>
-            Radoslaw Krolczyk<br>
-            Weberstraße 25<br>
-            28203 Bremen<br><br>
-
-            Eric Peters<br>
-            Weberstraße 25<br>
-            28203 Bremen <br><br>
-
-            Rechtliche Beratung<br>
-            RA Susanne Oelbermann<br>
-            ...
-          </p>
-        </div>
-        <div class="l-grid-u-1 l-grid-u-sm-6-6 l-grid-u-md-24-24 "><p class="c-imprint__text--col2">
-        Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
-        </div>
+<!-- STAT C -->
 
 
-      </div>
-    </section>
+    <article class="article">
 
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/galerieferien-bis-zum-19-april/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Galeriepause</p>
+  		                <p class="c-news__title"></p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">18.03.2020 – <br>19.04.2020</div>
+  		            </div>
+  		        	<img src="https://k-strich.dehttps://k-strich.de/site/assets/files/1529/valeska_gert_siebdruck.jpeg" class="c-news__img c-news__img--fullwidth portrait" /></a>
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/die-todliche-doris/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Die Tödliche Doris</p>
+  		                <p class="c-news__title">Wie geht es dir jetzt?</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">07.02.2020 – <br>11.04.2020</div>
+  		            </div>
+  		        	<img src="https://k-strich.dehttps://k-strich.de/site/assets/files/1513/filmstill-2-web.jpg" class="c-news__img c-news__img--fullwidth portrait" /></a>
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/sibylle-springer-1/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Sibylle Springer</p>
+  		                <p class="c-news__title">Neue Lügen</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">15.11.2019 – <br>25.01.2020</div>
+  		            </div>
 
-  </article>
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/verena-issel-1/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Verena Issel</p>
+  		                <p class="c-news__title">Autoscooter</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">07.09.2019 – <br>03.11.2019</div>
+  		            </div>
 
-</main>
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/historiker-innen/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Historiker*innen (Berlin Take)</p>
+  		                <p class="c-news__title">Eiko Grimberg, Jana Engel, Arne Schmitt</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">06.09.2019 – <br>15.09.2019</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/im-interim-2/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">im Interim</p>
+  		                <p class="c-news__title">Hannah Regenberg, Saskia Senge, Irene Strese</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">10.08.2019 – <br>31.08.2019</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/die-historikerinnen/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Historiker*innen</p>
+  		                <p class="c-news__title">Jana Engel, Eiko Grimberg, Arne Schmitt </p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">04.05.2019 – <br>15.06.2019</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/michael-schmid/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Michael Schmid</p>
+  		                <p class="c-news__title">A</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">23.03.2019 – <br>27.04.2019</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/alexander-kluge/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Thomas Hartmann</p>
+  		                <p class="c-news__title">Alexander Kluge</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">12.01.2019 – <br>23.02.2019</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/sibylle-springer/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Achim Bertenburg</p>
+  		                <p class="c-news__title">final cut</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">13.10.2018 – <br>17.11.2018</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/toni-schonbuchner/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">im Interim</p>
+  		                <p class="c-news__title">Ulli Bomans, Jessica Buhlmann, <br />
+  Sofia Duchovny, Sibylle Springer</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">18.08.2018 – <br>09.09.2018</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/kommunikation/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Hannah Regenberg</p>
+  		                <p class="c-news__title">Kommunikation</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">13.05.2018 – <br>16.06.2018</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/exzess/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Exzess</p>
+  		                <p class="c-news__title">Die Tödliche Doris, <br />
+  Sibylle Springer, <br />
+  Lukas Zerbst</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">25.03.2018 – <br>28.04.2018</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/the-pool/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Eiko Grimberg</p>
+  		                <p class="c-news__title">The Pool</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">03.09.2017 – <br>07.10.2017</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/thomas-hartmann-norbert-schwontkowski-im-interim/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">im Interim</p>
+  		                <p class="c-news__title">Thomas Hartmann,<br />
+  Norbert Schwontkowski</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">23.07.2017 – <br>05.08.2017</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/christian-haake-possum-play/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Christian Haake</p>
+  		                <p class="c-news__title">possum play</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">10.06.2017 – <br>15.07.2017</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/ingo-vetter/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Ingo Vetter</p>
+  		                <p class="c-news__title">Keramik aus zweitausend Jahren</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">22.04.2017 – <br>27.05.2017</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/neue-arbeiten/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Thomas Hartmann</p>
+  		                <p class="c-news__title">Neue Arbeiten</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">25.02.2017 – <br>01.04.2017</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/wolfgang-muller/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Wolfgang Müller</p>
+  		                <p class="c-news__title">Die Stare von Hjertøya singen Kurt Schwitters</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">21.01.2017 – <br>10.02.2017</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/die-unbestimmte-form/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Die unbestimmte Form</p>
+  		                <p class="c-news__title">Alison Knowles, Achim Bertenburg, <br />
+  Pauline M'barek, Hannah Regenberg, <br />
+  Wolfgang Müller</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">04.09.2016 – <br>15.10.2016</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/im-interim/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">im Interim</p>
+  		                <p class="c-news__title">Achim Bertenburg, <br />
+  Christian Haake</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">05.08.2016 – <br>27.08.2016</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/zwei-arbeiten/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Arne Schmittt</p>
+  		                <p class="c-news__title">Zwei Arbeiten</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">04.06.2016 – <br>09.07.2016</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/hell/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Sibylle Springer</p>
+  		                <p class="c-news__title">hell</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">02.04.2016 – <br>08.05.2016</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/funke/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Andrzej Steinbach</p>
+  		                <p class="c-news__title">Funke</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">11.12.2015 – <br>20.12.2015</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/internale/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Hannah Regenberg</p>
+  		                <p class="c-news__title">Internale</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">29.11.2015 – <br>23.01.2016</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/im-interim-1/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">im Interim</p>
+  		                <p class="c-news__title">Die Tödliche Doris, <br />
+  Eiko Grimberg, Sibylle Springer</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">31.10.2015 – <br>21.11.2015</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/ukrainian-night/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Miron Zownir</p>
+  		                <p class="c-news__title">Ukrainian Night</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">05.09.2015 – <br>10.10.2015</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/borrowed-shapes/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Eiko Grimberg</p>
+  		                <p class="c-news__title">Borrowed Shapes</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">14.06.2015 – <br>19.07.2015</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/reinecke-wimmer/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Reinecke &amp; Wimmer</p>
+  		                <p class="c-news__title">Die Kirche im Dorf</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">22.11.2014 – <br>19.01.2014</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/das-vergnugen/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Sibylle Springer</p>
+  		                <p class="c-news__title">Das Vergnügen</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">11.10.2014 – <br>07.11.2014</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/blanks/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Blanks</p>
+  		                <p class="c-news__title">Achim Bertenburg, Christian Haake, Hannah Regenberg</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">05.04.2014 – <br>04.05.2014</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/die-autogerechte-stadt/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Arne Schmitt</p>
+  		                <p class="c-news__title">Die autogerechte Stadt</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">15.02.2014 – <br>16.03.2014</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/alice-creischer-andreas-siekmann/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Alice Creischer &amp; Andreas Siekmann</p>
+  		                <p class="c-news__title">Zur Aktualisierung des Atlas von Arntz und Neurath</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">09.11.2013 – <br>13.12.2013</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/michaela-melian/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Michaela Melián</p>
+  		                <p class="c-news__title">Hausmusik</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">07.09.2013 – <br>11.10.2013</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/karin-arink/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Karin Arink</p>
+  		                <p class="c-news__title">Kooi/Käfig</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">15.06.2013 – <br>19.07.2013</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/wolfgang-muller-1/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Wolfgang Müller</p>
+  		                <p class="c-news__title">Die  Kunst der Zukunft</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">15.03.2013 – <br>19.04.2013</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/miron-zownir/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Miron Zownir</p>
+  		                <p class="c-news__title">Offene Wunden - Bilder aus dem freien Osteuropa</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">19.01.2013 – <br>22.02.2013</div>
+  		            </div>
+
+  		      </section>
+  		      <section class="c-news c-news--line">
+  		        <a href="/de/ausstellungen/lena-schmidt/" class="c-news__eventlink">
+  		            <div class="l-grid-g">
+  		              <div class="c-news__eventinfo l-grid-u-1 l-grid-u-sm-3-5 l-grid-u-md-18-24">
+  		                <p class="c-news__artist">Lena Schmidt</p>
+  		                <p class="c-news__title">Power Lines</p>
+  		              </div>
+  		              <div class="c-news__eventdate l-grid-u-1 l-grid-u-sm-2-5 l-grid-u-md-6-24">24.11.2012 – <br>21.12.2012</div>
+  		            </div>
+
+  		      </section></article>
 </body>
 </html>
